@@ -15,12 +15,7 @@
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
-            </Grid.RowDefinitions>
-            <Label Text="Zametkin"
-               Grid.Row="1"
-               VerticalOptions="Center" 
-               HorizontalOptions="Center"
-               FontSize="Large"/>
+            </Grid.RowDefinitions> 
             <Label Text="Авторизация"
                Grid.Row="2"
                VerticalOptions="Center" 
@@ -34,7 +29,7 @@
             <Entry Keyboard ="Text"
                Grid.Row="4"
                FontSize="Small"
-               Placeholder="Enter login"    
+               Placeholder="Введите логин"    
                VerticalOptions="Center" 
                HorizontalOptions="Center" />
             <Label Text="Пароль"
@@ -45,7 +40,7 @@
             <Entry Keyboard="Text"
                Grid.Row="6"
                FontSize="Small"
-               Placeholder="Enter password" 
+               Placeholder="Ввведите пароль" 
                VerticalOptions="Center" 
                HorizontalOptions="Center" />
             <Button

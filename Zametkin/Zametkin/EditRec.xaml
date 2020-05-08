@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Zametkin.EditRec">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="300"></RowDefinition>
+                    <RowDefinition Height="80"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Text="Название"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    HeightRequest="100"
+                    WidthRequest="100" 
+                    Grid.Row="0"
+                    Padding="5"
+                    VerticalOptions="StartAndExpand" 
+                    HorizontalOptions="StartAndExpand" />
+                <Entry x:Name="nameRec" 
+                    Text="{Binding Name}"
+                    Grid.Row="1"
+                    WidthRequest="100"/>
+                <Label Text="Текст"
+                    Grid.Row="2"
+                    FontSize="Medium"
+                    Padding="5"
+                    FontAttributes="Bold"
+                    HeightRequest="100"
+                    WidthRequest="100"
+                    VerticalOptions="StartAndExpand" 
+                    HorizontalOptions="StartAndExpand" />
+                <Editor x:Name="textRec" 
+                    Grid.Row="3"
+                    HeightRequest="100"
+                    Text="{Binding Text}" 
+                    WidthRequest="100"/>
+                <Button x:Name="addRec"
+                    Text="S"
+                    Clicked="safeRec"
+                    Grid.Row="4"
+                    HorizontalOptions="CenterAndExpand" 
+                    Grid.Column="0"/>
+                <Button x:Name="deleteRec"
+                    Text="D"
+                    Clicked="delRec"
+                    Grid.Row="4"
+                    HorizontalOptions="CenterAndExpand" 
+                    Grid.Column="1"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

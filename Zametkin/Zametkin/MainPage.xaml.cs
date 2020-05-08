@@ -5,8 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-using Firebase.Database;
-using Firebase.Database.Query;
 
 namespace Zametkin
 {
@@ -18,13 +16,13 @@ namespace Zametkin
         public MainPage()
         {
             InitializeComponent();
-
-            FirebaseClient firebase = new FirebaseClient("https://zametkin-2c155.firebaseio.com/");
+            Title = "Zametkin";
+            //FirebaseClient firebase = new FirebaseClient("https://zametkin-2c155.firebaseio.com/");
             
         }
         private async void LogIn(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new ListViewPage1());
+            await Navigation.PushModalAsync(new NavigationPage(new ListViewPage1()));
         }
     }
 

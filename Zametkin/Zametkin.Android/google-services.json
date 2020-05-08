@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "16112703884",
+    "firebase_url": "https://zametkin-2c155.firebaseio.com",
+    "project_id": "zametkin-2c155",
+    "storage_bucket": "zametkin-2c155.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16112703884:android:8ef731a54c4fde97f31ea9",
+        "android_client_info": {
+          "package_name": "packet.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "16112703884-de3nrqpt1p26bmr3s26ef7mjatahgq3t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtAYg0YFdi0LiVymouBUYT3EiyFYi4BK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "16112703884-de3nrqpt1p26bmr3s26ef7mjatahgq3t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
