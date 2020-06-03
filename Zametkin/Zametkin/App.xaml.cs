@@ -1,7 +1,10 @@
 ﻿using System;
 using System.IO;
+using System.Globalization;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.Resources;
+using Xamarin.Essentials;
 
 namespace Zametkin
 {
@@ -28,8 +31,7 @@ namespace Zametkin
 
             if (Device.OS != TargetPlatform.WinPhone)
             {
-                Resource.Culture = DependencyService.Get<ILocalize>()
-                                    .GetCurrentCultureInfo();
+                //ResourceManager resourceManager = new ResourceManager();
             }
 
             MainPage = new NavigationPage(new MainPage());

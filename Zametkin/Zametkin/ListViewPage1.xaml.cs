@@ -38,9 +38,6 @@ namespace Zametkin
             Notes = str;//new string[] { "Заметка 0", "Заметка 1"};
             this.BindingContext = this;
 
-            Button b1 = new Button();
-            b1.Text=Resources.
-
         }
 
         async void Handle_ItemTapped(object sender, ItemTappedEventArgs e)

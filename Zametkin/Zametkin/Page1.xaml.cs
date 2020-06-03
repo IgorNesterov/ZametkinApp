@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,6 +27,6 @@ namespace Zametkin
             }
             //this.Navigation.PopAsync();
             await Navigation.PushModalAsync(new NavigationPage(new ListViewPage1()));
-        }
+        } 
     }
 }

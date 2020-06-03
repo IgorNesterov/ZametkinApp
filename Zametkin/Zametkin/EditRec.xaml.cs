@@ -35,5 +35,13 @@ namespace Zametkin
             //this.Navigation.PopAsync();
             await Navigation.PushModalAsync(new NavigationPage(new ListViewPage1()));
         }
+        private async void getMaps(object sender, EventArgs e)
+        {
+            //var record = (Record)BindingContext;
+            //App.Database.DeleteItem(record.Id);
+            //this.Navigation.PopAsync();
+            String s = coordinates.Text;
+            await Navigation.PushModalAsync(new NavigationPage(new MapePage(s)));
+        }
     }
 }

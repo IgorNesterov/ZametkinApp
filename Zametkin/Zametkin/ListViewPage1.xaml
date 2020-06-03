@@ -2,11 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:local="clr-namespace:Zametkin;assembly=Zametkin"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Zametkin.ListViewPage1">
-    
     <StackLayout>
         <Label Text="Мои заметки"
                VerticalOptions="Center" 
@@ -26,11 +24,13 @@
             </ListView.ItemTemplate>
 
         </ListView>
-            <Button x:Name="buttonAddRec"
-               Text=Resource.MyNotes
+        <Button x:Name="buttonAddRec"
+               Text="Add"
+               TextColor="White"
+               BackgroundColor="DodgerBlue"
                Clicked="addRec"
                VerticalOptions="Center" 
                HorizontalOptions="Center"/>
     </StackLayout>
-  
+
 </ContentPage>

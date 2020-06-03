@@ -12,7 +12,9 @@
                     <RowDefinition Height="30"></RowDefinition>
                     <RowDefinition Height="40"></RowDefinition>
                     <RowDefinition Height="30"></RowDefinition>
-                    <RowDefinition Height="300"></RowDefinition>
+                    <RowDefinition Height="230"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="40"></RowDefinition>
                     <RowDefinition Height="80"></RowDefinition>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
@@ -20,7 +22,7 @@
                     <ColumnDefinition Width="*"></ColumnDefinition>
                     <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <Label Text="Название"
+                <Label Text="Title"
                     FontSize="Medium"
                     FontAttributes="Bold"
                     HeightRequest="100"
@@ -33,7 +35,7 @@
                     Text="{Binding Name}"
                     Grid.Row="1"
                     WidthRequest="100"/>
-                <Label Text="Текст"
+                <Label Text="Text"
                     Grid.Row="2"
                     FontSize="Medium"
                     Padding="5"
@@ -47,10 +49,25 @@
                     HeightRequest="100"
                     Text="{Binding Text}" 
                     WidthRequest="100"/>
-                <Button x:Name="addRec"
-                    Text="S"
-                    Clicked="safeRec"
+                <Label Text="Coordinates C1;C2"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    HeightRequest="100"
+                    WidthRequest="100" 
                     Grid.Row="4"
+                    Padding="5"
+                    VerticalOptions="StartAndExpand" 
+                    HorizontalOptions="StartAndExpand" />
+                <Entry x:Name="coordinates" 
+                    Text="{Binding Geometka}"
+                    Grid.Row="5"
+                    WidthRequest="100"/>
+                <Button x:Name="addRec"
+                    Text="Save"
+                    TextColor="White"
+                    BackgroundColor="DodgerBlue"
+                    Clicked="safeRec"
+                    Grid.Row="6"
                     HorizontalOptions="StartAndExpand" 
                     Grid.Column="1"/>
             </Grid>

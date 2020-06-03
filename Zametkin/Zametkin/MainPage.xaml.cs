@@ -1,7 +1,12 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
+using System.Net;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Net;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
@@ -18,11 +23,24 @@ namespace Zametkin
             InitializeComponent();
             Title = "Zametkin";
             //FirebaseClient firebase = new FirebaseClient("https://zametkin-2c155.firebaseio.com/");
-            
+
         }
         private async void LogIn(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new NavigationPage(new ListViewPage1()));
+            /*string login = loginK.Text;
+            string password = passwordK.Text;
+            
+            HttpClient http = new HttpClient();
+            var uri = new Uri("https://192.168.0.102:52159/UserService.svc/users/admin");
+            var response = await http.GetStringAsync(uri);
+            string s = (string)response;*/
+           //if (s.Equals(password))
+           //{
+                await Navigation.PushModalAsync(new NavigationPage(new ListViewPage1()));
+           // }
+
+            
+
         }
     }
 
